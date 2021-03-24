@@ -1,0 +1,39 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Karekod Destekli Stok Takibi ve Yönetimi Sistemi",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "backend": "nodemon server",
+    "web": "cd ../frontend && npm start --prefix web",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run backend\" \"npm run web\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stoqr/stoqrweb.git"
+  },
+  "author": "Fikri Eren Çiftçi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stoqr/stoqrweb/issues"
+  },
+  "homepage": "https://github.com/stoqr/stoqrweb#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.2",
+    "dateformat": "^4.4.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.10",
+    "qrcode": "^1.4.4",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}

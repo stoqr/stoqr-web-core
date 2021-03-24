@@ -1,0 +1,6 @@
+{
+  "AtlasDBURI": "mongodb+srv://stoqrdbadmin:Stoqr@pp1*@cluster0.ety8i.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "LocalDBURI": "mongodb://127.0.0.1:27017/stoqrdevdb?retryWrites=true&w=majority",
+  "jwtSecret": "St0qRS3r_t",
+  "host": "http://localhost:5000/"
+}
